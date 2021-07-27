@@ -18,4 +18,16 @@ public class PlantServiceDB implements PlantService {
 		return null;
 	}
 
+	@Override
+	public Plant updatePlant(int id, Plant plant) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public String deletePlant(int id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

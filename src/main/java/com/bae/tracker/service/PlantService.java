@@ -8,4 +8,8 @@ public interface PlantService {
 	public Plant createPlant(Plant plant);
 
 	public List<Plant> getPlants();
+
+	public Plant updatePlant(int id, Plant plant);
+
+	public String deletePlant(int id);
 }

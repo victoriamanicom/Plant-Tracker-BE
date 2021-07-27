@@ -26,4 +26,17 @@ public class PlantServiceList implements PlantService {
 		return this.plants;
 	}
 
+	@Override
+	public Plant updatePlant(int id, Plant plant) {
+		this.plants.remove(id);
+		this.plants.add(id, plant);
+		return this.plants.get(id);
+	}
+
+	@Override
+	public String deletePlant(int id) {
+		this.plants.remove(id);
+		return "Plant deleted: " + id;
+	}
+
 }
