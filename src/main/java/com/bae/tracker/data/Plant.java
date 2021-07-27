@@ -64,7 +64,7 @@ public class Plant {
 		this.leafColour = leafColour;
 	}
 
-	public boolean isSucculent() {
+	public boolean getIsSucculent() {
 		return isSucculent;
 	}
 
