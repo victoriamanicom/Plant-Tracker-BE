@@ -79,7 +79,7 @@ public class Plant {
 		return isSucculent;
 	}
 
-	public void setSucculent(boolean isSucculent) {
+	public void setIsSucculent(boolean isSucculent) {
 		this.isSucculent = isSucculent;
 	}
 
