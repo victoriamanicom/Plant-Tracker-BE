@@ -12,4 +12,6 @@ public interface PlantService {
 	public Plant updatePlant(int id, Plant plant);
 
 	public String deletePlant(int id);
+
+	public Plant getByName(String name);
 }

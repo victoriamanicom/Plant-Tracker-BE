@@ -48,4 +48,9 @@ public class PlantController {
 
 	}
 
+	@GetMapping("/getByName/{name}")
+	public Plant getByName(@PathVariable String name) {
+		return this.service.getByName(name);
+	}
+
 }
