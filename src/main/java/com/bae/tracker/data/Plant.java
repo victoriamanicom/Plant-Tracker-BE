@@ -1,5 +1,7 @@
 package com.bae.tracker.data;
 
+import java.util.Objects;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -41,6 +43,25 @@ public class Plant {
 		this.leafColour = leafColour;
 		this.isSucculent = isSucculent;
 		this.imgUrl = imgUrl;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, imgUrl, isSucculent, leafColour, name, potSize);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Plant other = (Plant) obj;
+		return id == other.id && Objects.equals(imgUrl, other.imgUrl) && isSucculent == other.isSucculent
+				&& Objects.equals(leafColour, other.leafColour) && Objects.equals(name, other.name)
+				&& potSize == other.potSize;
 	}
 
 	public int getId() {
