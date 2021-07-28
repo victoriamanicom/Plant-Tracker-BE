@@ -54,6 +54,7 @@ public class PlantServiceDB implements PlantService {
 		found.setName(plant.getName());
 		found.setPotSize(plant.getPotSize());
 		found.setIsSucculent(plant.getIsSucculent());
+		found.setImgUrl(plant.getImgUrl());
 
 		Plant updated = this.repo.save(found);
 		return updated;
