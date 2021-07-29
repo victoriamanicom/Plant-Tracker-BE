@@ -15,5 +15,5 @@ public interface PlantService {
 
 	public Plant getByName(String name);
 
-	public List<Plant> getSucculent(boolean b);
+	public List<Plant> getSucculent(boolean isSucculent);
 }
