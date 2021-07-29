@@ -15,8 +15,10 @@ public class Plant {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 
-	@Column
+	@Column(unique = true)
 	private String name;
+
+	@Column
 	private int potSize;
 	private String leafColour;
 	private boolean isSucculent;

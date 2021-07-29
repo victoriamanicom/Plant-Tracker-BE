@@ -1,0 +1,23 @@
+[33mcommit 294a26d07fea04f0f08a62746ad6cf51f0d123b5[m[33m ([m[1;36mHEAD -> [m[1;32mCRUD-functionality[m[33m, [m[1;31morigin/CRUD-functionality[m[33m)[m
+Author: Victoria <81752413+victoriamanicom@users.noreply.github.com>
+Date:   Tue Jul 27 16:02:37 2021 +0100
+
+    PT-14 #comment Added READ functionality
+
+[33mcommit 56fdf94a50fcd001af550098a108c7a1f3900bd5[m
+Author: Victoria <81752413+victoriamanicom@users.noreply.github.com>
+Date:   Tue Jul 27 15:43:55 2021 +0100
+
+    PT-17 #comment Added CREATE functionality in service and controller
+
+[33mcommit 341f0494f447082bece8a53dedb7be4321be2bc0[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/dev[m[33m, [m[1;32mmain[m[33m, [m[1;32mdev[m[33m)[m
+Author: victoriamanicom <victoriamanicom@gmail.com>
+Date:   Tue Jul 27 15:35:18 2021 +0100
+
+    PT-6 #comment Initial commit with plant class creation
+
+[33mcommit 54773f6327c89663e0a8bda7510e82c9b42878b2[m
+Author: victoriamanicom <victoriamanicom@gmail.com>
+Date:   Tue Jul 27 12:02:54 2021 +0100
+
+    PT-6 #comment Initial commit with plant class creation
