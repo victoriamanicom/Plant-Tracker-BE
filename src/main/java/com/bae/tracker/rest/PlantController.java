@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,6 +17,7 @@ import com.bae.tracker.data.Plant;
 import com.bae.tracker.service.PlantService;
 
 @RestController
+@CrossOrigin
 public class PlantController {
 	private PlantService service;
 
@@ -51,6 +53,11 @@ public class PlantController {
 	@GetMapping("/getByName/{name}")
 	public Plant getByName(@PathVariable String name) {
 		return this.service.getByName(name);
+	}
+
+	@GetMapping("/getSucculent")
+	public List<Plant> getSucculent() {
+		return this.service.getSucculent(true);
 	}
 
 }

@@ -7,6 +7,8 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import java.util.List;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -108,5 +110,13 @@ public class PlantControllerIntegrationTest {
 				.andExpect(content().json(this.mapper.writeValueAsString(new Plant(1, "Calathea Ornata", 9, "Green",
 						false,
 						"https://cdn.shopify.com/s/files/1/1802/1289/products/calathea_ornata_530x@2x.jpg?v=1596811596"))));
+	}
+
+	@Test
+	void testGetSucculent() throws Exception {
+		this.mockMVC.perform(get("/getSucculent")).andExpect(status().is(200))
+				.andExpect(content().json(this.mapper.writeValueAsString(List.of(new Plant(2, "Aloe", 3, "Variegated",
+						true,
+						"https://cdn.shopify.com/s/files/1/0045/4613/4065/products/aloe1_900x.jpg?v=1620204349")))));
 	}
 }

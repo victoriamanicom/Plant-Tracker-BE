@@ -112,4 +112,16 @@ public class PlantServiceDBUnitTest {
 		Mockito.verify(this.repo, Mockito.times(1)).findByName(name);
 	}
 
+	@Test
+	void testGetSucculent() {
+		List<Plant> testPlants = List.of(new Plant("Aloe", 3, "Variegated", true,
+				"https://cdn.shopify.com/s/files/1/0045/4613/4065/products/aloe1_900x.jpg?v=1620204349"));
+
+		Mockito.when(this.repo.findByIsSucculent(true)).thenReturn(testPlants);
+
+		assertThat(this.service.getSucculent(true)).isEqualTo(testPlants);
+
+		Mockito.verify(this.repo, Mockito.times(1)).findByIsSucculent(true);
+	}
+
 }

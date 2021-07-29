@@ -45,4 +45,10 @@ public class PlantServiceList implements PlantService {
 		return null;
 	}
 
+	@Override
+	public List<Plant> getSucculent(boolean isSucculent) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -60,4 +60,9 @@ public class PlantServiceDB implements PlantService {
 		return updated;
 	}
 
+	@Override
+	public List<Plant> getSucculent(boolean isSucculent) {
+		return this.repo.findByIsSucculent(true);
+	}
+
 }

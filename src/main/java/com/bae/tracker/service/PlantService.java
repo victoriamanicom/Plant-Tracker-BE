@@ -14,4 +14,6 @@ public interface PlantService {
 	public String deletePlant(int id);
 
 	public Plant getByName(String name);
+
+	public List<Plant> getSucculent(boolean isSucculent);
 }
