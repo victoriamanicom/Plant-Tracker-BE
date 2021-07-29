@@ -55,4 +55,9 @@ public class PlantController {
 		return this.service.getByName(name);
 	}
 
+	@GetMapping("/getSucculent")
+	public List<Plant> getSucculent() {
+		return this.service.getSucculent(true);
+	}
+
 }
